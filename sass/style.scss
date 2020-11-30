@@ -1,8 +1,3 @@
-@charset "UTF-8"
-/* Global */
-*::before, *::after {
-    box-sizing: border-box;
-}
 /*Variables*/
 $color-gold: #FFD700;
 $color-white: #ffffff;
@@ -16,34 +11,131 @@ $font-header: 'Raleway', sans-serif;
 }
 .btn {
     text-decoration: none;
-    color: $color-gold;
-    border: 1px solid $color-white;
+    color: #ffffff;
+    border: 1px solid #FFD700;
     min-width: 150px;
     margin: 30px;
-    padding: 2px 25px;
+    padding: 15px 40px;
+    background-color: #FFD700;
+    font-size: 18px;
+    font-style: bold;
+}
+h1 {
+    font-family: $font-header;
+    padding-top: 45px;
+    padding-bottom: 35px;
+    font-size: 80px;
+}
+h5 {
+    font-family: $font-header;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.page-title {
+    position: relative;
+    text-align: center;
+}
+.page-title::after {
+    content: 'Excepteur sint occaecat cupidatat non proident';
+    font-size: 18px;
+    position: absolute;
+    bottom: -5px;
+    transform: translateX(-50%);
+    left: 50%;
+    font-family: $font-text;
+    color: grey;
+
 }
 /*header*/
 .navigation {
-    background-image: url("https://images.pexels.com/photos/989965/pexels-photo-989965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    padding: 10px 0;
+}
 
-    ul {
+.navigation ul {
         margin: 0;
         padding: 0;
         list-style-type: none;
         text-align: right;
         margin-right: 20px;
-    
-    li {
-        display: inline-block;
+}
         
-        a {
-            text-decoration: none;
-            margin: 0 4px;
-            color: $color-white;
-        }
-        i {
-            color: $color-white;
-        }
+.navigation ul li {
+            display: inline-block;
+            font-size: 20px;
+            margin: 0 10px;
+}
+            
+.navigation ul li a {
+                text-decoration: none;
+                margin: 0 4px;
+                color: #ffffff;
+            }
+.navigation ul li a i {
+                color: #ffffff;
+}
+
+/*Splash*/
+.splash {
+    position: relative; 
+    background-image: url("https://images.pexels.com/photos/989965/pexels-photo-989965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: contain;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+}
+    
+.splash-inner {
+    position: absolute;
+    width: 100%;
+    color: ivory;
+    text-align: center;
+    top: 30%;
+    }
+/*ABOUT*/
+.description{
+    display: flex;
+    
+    .description-title {
+        font-family: $font-header;
     }
 }
+.about-element {
+    flex: 0 0 33%;
+    text-align: center;
+    margin: 10px;
+
+    .element-graph i {
+        font-size: 50px;
+        color: $color-gold;
+        border: 3px solid $color-gold;
+        padding: 30px;
+        border-radius: 50%;
+    }
+    .about-description {
+        margin: 30px;
+        font-style: 'Raleway', sans-serif;
+        font-family: $font-text;
+    }
+
+}
+/*portfolio*/
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.portfolio {
+    background-color: #F0F8FF;
+
+    a {
+        font-family: $font-text;
+        padding-bottom: 10px;
+    }
+}
+.object {
+    background-color:$color-white;
+    margin-bottom: 20px;
+    
 }
