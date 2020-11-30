@@ -108,7 +108,7 @@ h5 {
     .element-graph i {
         font-size: 50px;
         color: $color-gold;
-        border: 3px solid $color-gold;
+        border: 4px solid $color-gold;
         padding: 30px;
         border-radius: 50%;
     }
@@ -128,6 +128,7 @@ h5 {
 }
 .portfolio {
     background-color: #F0F8FF;
+    height: 120vh;
 
     a {
         font-family: $font-text;
@@ -138,4 +139,32 @@ h5 {
     background-color:$color-white;
     margin-bottom: 20px;
     
+}
+/*footer*/
+.footer {
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+
+}
+.footer-copyright {
+    margin: 40px 0;
+}
+.col-md-8 ul {
+    list-style-type: none;
+}
+.col-md-8 li {
+    font-size: 0;
+    display: inline;
+}
+.col-md-8 i {
+    font-size: 25px;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    color: $color-white;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    left: 0;
 }
